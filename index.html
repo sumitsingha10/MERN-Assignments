@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>A Responsive Banner With html,Bootstrap</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #e6f7ff; /* Set your desired background color */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" style="background: linear-gradient(to right, #ff6347, #4b0082);">
+        <a class="navbar-brand" href="#">Sumit Singha...</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Banner with Age Input -->
+    <div class="banner">
+        <div class="container">
+            <!-- Age Input Field -->
+            <div class="form-group">
+                <input type="number" class="form-control meta" id="ageInput" placeholder="Enter your age" aria-label="number">
+            </div>
+
+            <!-- Button to Trigger Age Check -->
+            <button class="btn btn-outline-success" onclick="checkAge()">Check Age</button>
+        </div>
+    </div>
+
+    <!-- Cards -->
+    <div class="container mt-4">
+        <div class="row">
+
+            <!-- Card 1 -->
+            <div class="col-lg-3 col-md-6 col-sm-12 mx-auto mb-4 margin-small">
+                <div class="card h-100 border-primary rounded-lg colorful-shadow">
+                    <img src="https://www.pngall.com/wp-content/uploads/13/Mongodb-PNG-Image-HD.png" class="card-img-top img-fluid" alt="MongoDB">
+                    <hr class="my-4">
+                    <div class="card-body">
+                        <h5 class="card-title text-warning">Mongo DB</h5>
+                        <p class="card-text">MongoDB is a document database with the scalability and flexibility that you want with the querying and indexing that you need.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-lg-3 col-md-6 col-sm-12 mx-auto mb-4 margin-small">
+                <div class="card h-100 border-success rounded-lg colorful-shadow">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoTgDGz3f2zgOqRIhBsfZDsabk5GiBzXuXCg&usqp=CAU" class="card-img-top img-fluid" alt="Express JS">
+                    <hr class="my-4">
+                    <div class="card-body">
+                        <h5 class="card-title text-danger">Express JS</h5>
+                        <p class="card-text">Express is a minimal and flexible Node.js web application framework that provides a robust set of features for web</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-lg-3 col-md-6 col-sm-12 mx-auto mb-4 margin-small">
+                <div class="card h-100 border-danger rounded-lg colorful-shadow">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFBOMWoowh_mpRg25xLEPsZqTa_ATc8sRPYjQwl9pXgscuZYi6nxqWIIj3tKIGA5yAGeg&usqp=CAU" class="card-img-top img-fluid" alt="React JS">
+                    <hr class="my-4">
+                    <div class="card-body">
+                        <h5 class="card-title text-success">React JS</h5>
+                        <p class="card-text">React.js, more commonly known as React, is a free, open-source JavaScript library. it is an open-source library.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="col-lg-3 col-md-6 col-sm-12 mx-auto mb-4 margin-small">
+                <div class="card h-100 border-warning rounded-lg colorful-shadow">
+                    <img src="https://vistaran-tech.s3.ap-south-1.amazonaws.com/wp-content/uploads/2022/05/13104926/nodejs-logo.png" class="card-img-top img-fluid" alt="Node JS">
+                    <hr class="my-4">
+                    <div class="card-body">
+                        <h5 class="card-title text-primary">Node JS</h5>
+                        <p class="card-text">Node.js (Node) is an Open Source, cross-platform runtime environment for executing JavaScript code.It use for make a server.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer mt-5 py-3 bg-dark text-white text-center">
+        <div class="container">
+            <p>&copy; 2024 A Responsive Banner With HTML,Bootstrap</p>
+        </div>
+    </footer>
+
+    <!-- (For Bootstrap functionality) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<!-- My JavaScript -->
+<script>
+    //close navbar when clicking outside
+    $(document).on('click',function(e){
+        if(!$(e.target).closest('.navbar').length){
+            $('.navbar-collapse').collapse('hide');
+        }
+    });
+    // Close navbar when scrolling
+    $(window).scroll(function () {
+            $('.navbar-collapse').collapse('hide');
+        });
+        //Checking Age younger or older
+    function checkAge() {
+        var ageInput = document.getElementById('ageInput').value;
+
+        // Check if age input is empty or not a number
+        if (ageInput === "" || isNaN(parseInt(ageInput))) {
+            alert('Enter a valid Age.');
+        } else {
+            // Convert ageInput to an integer
+            var age = parseInt(ageInput);
+
+            // Display alert based on age
+            if (age >= 18) {
+                alert('You are an Adult.🧔🏻🧕🏻');
+            } else {
+                alert('You are a Child.🤴🏻👸🏻');
+            }
+        }
+    }
+</script>
+</body>
+</html>

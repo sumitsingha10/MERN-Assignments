@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+.banner {
+    margin-top: 62px;
+    background-image: url(https://assets.kpmg.com/is/image/kpmg/woman-using-calculator-banner:cq5dam.web.2100.700);
+    background-size: cover;
+    opacity: 50px;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.card-img-top {
+    max-height: 200px;
+    object-fit: cover;
+}
+.container .form-group input{
+    border: 30px;
+    margin-left: 29%;
+    width:40%;
+}
+.container button{
+    background-color: rgb(241, 236, 239);
+    border-radius: 10px;
+}
+.colorful-shadow {
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2), 0 6px 20px rgba(0, 123, 255, 0.3);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.colorful-shadow:hover {
+    box-shadow: 0 6px 12px rgba(255, 193, 7, 0.2), 0 10px 30px rgba(255, 193, 7, 0.3);
+}
+/* Navbar styles */
+.navbar {
+    padding: 1rem; /* Adjust padding as needed */
+    box-shadow: 0 4px 5px rgba(3, 161, 245, 0.927); /* Add a subtle box shadow */
+}
+
+.navbar-brand {
+    text-transform: uppercase;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff; /* Text color */
+    text-shadow: 4px 3px 6px rgba(5, 28, 228, 0.998); /* Text shadow */
+}
+
+.navbar-nav .nav-item {
+    margin-right: 20px; /* Add some spacing between navbar items */
+}
+
+.navbar-nav .nav-link {
+    font-size: 1.2rem; /* Increase font size for the navbar links */
+}
+.card hr {
+    height: 2px; /* Adjust the height as needed */
+    background-color: #ccc; /* Optional: Change the background color */
+    margin: 10px 0; /* Optional: Adjust the top and bottom margin */
+}
+
+
+@media (max-width: 576px) {
+    .margin-small {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+}
+
+
