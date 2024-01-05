@@ -58,11 +58,7 @@
 .navbar-nav .nav-link {
     font-size: 1.2rem; /* Increase font size for the navbar links */
 }
-.card hr {
-    height: 2px; /* Adjust the height as needed */
-    background-color: #ccc; /* Optional: Change the background color */
-    margin: 10px 0; /* Optional: Adjust the top and bottom margin */
-}
+
 
 
 @media (max-width: 576px) {
