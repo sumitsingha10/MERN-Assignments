@@ -133,7 +133,7 @@
         var ageInput = document.getElementById('ageInput').value;
 
         // Check if age input is empty or not a number
-        if (ageInput === "" || isNaN(parseInt(ageInput))) {
+        if (ageInput === "" || isNaN(parseInt(ageInput)) || parseInt(ageInput) <= 0) {
             alert('Enter a valid Age.');
         } else {
             // Convert ageInput to an integer
