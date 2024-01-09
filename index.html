@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>A Responsive Banner With html,Bootstrap</title>
     <link rel="stylesheet" href="style.css">
+<!-- Remix Icons CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" />
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
@@ -100,22 +102,29 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
 
     <!-- Footer -->
     <footer class="footer mt-5 py-3 bg-dark text-white text-center">
         <div class="container">
-            <p>&copy; 2024 A Responsive Banner With HTML,Bootstrap</p>
+            <p>&copy; 2024 A Responsive Banner With HTML,raw CSS & Bootstrap</p>
         </div>
     </footer>
+
+    <!-- Sidebar -->
+<div class="sidebar">
+    <a href="#" class="icon"><i class="ri-facebook-line"></i></a>
+    <a href="#" class="icon"><i class="ri-instagram-line"></i></a>
+    <a href="#" class="icon"><i class="ri-linkedin-line"></i></a>
+</div>
 
     <!-- (For Bootstrap functionality) -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
+    <!-- Add Font Awesome for the arrow icon -->
+<script src="https://kit.fontawesome.com/your-fontawesome-kit-id.js" crossorigin="anonymous"></script>
 <!-- My JavaScript -->
 <script>
     //close navbar when clicking outside
@@ -147,6 +156,17 @@
             }
         }
     }
+    // Add this script at the end of your body tag
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function () {
+        var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+            document.querySelector('.sidebar').style.left = '-60px';
+        } else {
+            document.querySelector('.sidebar').style.left = '0';
+        }
+        prevScrollpos = currentScrollPos;
+    };
 </script>
 </body>
 </html>
